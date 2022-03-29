@@ -85,19 +85,6 @@ def set_next_frame(reference_time):
                 title = full_title
                 matrixportal.set_text(title, 1)
                 matrixportal.scroll_text(SCROLL_DELAY)
-                # if title != full_title:
-                #     title = full_title
-                #     last_update = reference_time
-                #     matrixportal.set_text('Now playing %s' % title, 1)
-                #     matrixportal.scroll_text(SCROLL_DELAY)
-                # else:
-                #     if reference_time < last_update + UPDATE_DURATION:
-                #         print('Skipping this update')
-                #     else:
-                #         print('Planning to update text to %s' % title)
-                #         last_update = reference_time
-                #         matrixportal.set_text('You\'re watching %s' % title, 1)
-                #         matrixportal.scroll_text(SCROLL_DELAY)
 
     else:
         print('Resetting text')
